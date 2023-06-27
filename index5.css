@@ -1,0 +1,44 @@
+*{
+    background: #eae204;
+    margin:0;
+    padding: 0px;
+    
+}
+.jokes{
+    margin: 80px ;
+    background-color: rgb(244, 248, 248);
+    color: rgb(14, 13, 13);
+   
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+}
+.jokes h3{
+    background-color: aliceblue;
+    margin: 25px;
+    margin-left: 30%;
+}
+
+.jtext {
+    background-color: aliceblue;
+    margin: 80px;
+   
+    align-items: center;
+
+}
+.button{
+    height: 20%;
+    margin: 50px;
+    margin-left: 40%;
+    margin-right: 20%;
+    background-color: aliceblue;
+
+}
+button{
+    width: 20%;
+   padding: 10px;
+   border-radius: 8px;
+   cursor: pointer;
+
+}

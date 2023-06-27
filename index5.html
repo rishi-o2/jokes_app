@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index5.css">
+</head>
+<body>
+    <div class="jokes"><h3>A smile a day keeps the pain away.....😊</h3>
+        <div class="jtext">
+            
+        </div>
+        <div class="button">
+            <button>Click to smile</button>
+        </div>
+    </div>
+    <script>
+        var btn= document.querySelector(".button");
+        var jokes= document.querySelector(".jtext");
+        const uploadjoke=async()=>{
+            try{
+                const setheader={
+                    headers:{
+                        Accept:"application/json"
+
+                    }
+                }
+                const res= await fetch(`https://icanhazdadjoke.com/`,setheader);
+                const data= await res.json();
+                jokes.innerHTML= data.joke;
+
+
+            }catch(e){
+                console.log(e)
+            }
+
+        }
+
+
+
+        btn.addEventListener('click',uploadjoke);
+
+    </script>
+</body>
+</html>
